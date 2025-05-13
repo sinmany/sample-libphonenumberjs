@@ -4,7 +4,7 @@ import { Box, TextField, Typography } from "@mui/material";
 import { parsePhoneNumberFromString } from "libphonenumber-js";
 import { useState } from "react";
 
-export default function ParsePhoneNumberOne() {
+export default function ParsePhoneNumber() {
   const [input, setInput] = useState("");
   const [info, setInfo] = useState(null);
 
@@ -13,7 +13,7 @@ export default function ParsePhoneNumberOne() {
 
     if (raw.startsWith("+855")) return raw;
     if (raw.startsWith("0")) return `+855${raw.slice(1)}`;
-    if (!raw.startsWith("0") || raw.startsWith("+855")) return `+855${raw}`;
+    if (!raw.startsWith("0") || !raw.startsWith("+855")) return `+855${raw}`;
     return raw;
   };
 

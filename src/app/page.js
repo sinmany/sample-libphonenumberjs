@@ -1,12 +1,12 @@
 "use client";
 
-import ParsePhoneNumberOne from "./components/ParsePhoneNumberOne";
+import ParsePhoneNumber from "./components/ParsePhoneNumber";
 
 export default function Home() {
   return (
     <div>
       <main>
-        <ParsePhoneNumberOne />
+        <ParsePhoneNumber />
       </main>
     </div>
   );
