@@ -1,12 +1,14 @@
 "use client";
-
-import ParsePhoneNumber from "./components/ParsePhoneNumber";
+import Test from "./components/imask/test";
 
 export default function Home() {
   return (
     <div>
       <main>
-        <ParsePhoneNumber />
+        {/* <ParsePhoneNumber /> */}
+        {/* <InputByUseIMask /> */}
+        {/* <ApplyReactIMask /> */}
+        <Test />
       </main>
     </div>
   );
